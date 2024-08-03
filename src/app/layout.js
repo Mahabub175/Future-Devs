@@ -1,19 +1,35 @@
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
+import Navbar from "@/components/Shared/Navbar/Navbar";
+import { Toaster } from "sonner";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700", "800"],
+});
 
 export const metadata = {
   title: "Future Devs",
-  description: "A website for online courses.",
+  description:
+    "Future Devs is online based learning platform, where students can learn their favorite topics and concepts.",
 };
 
-const RootLayout = ({ children }) => {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={openSans.className}>
+        <AntdRegistry>
+          <Toaster
+            closeButton
+            duration={2000}
+            richColors
+            position="top-center"
+          />
+          <Navbar />
+          {children}
+        </AntdRegistry>
+      </body>
     </html>
   );
-};
-
-export default RootLayout;
+}
