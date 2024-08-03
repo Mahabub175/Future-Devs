@@ -201,7 +201,7 @@ const Navbar = () => {
           {renderMenuItems(menuItems)}
           <div className="px-10">
             <Link href={"/lets-talk"}>
-              <button className="bg-primaryLight text-primary font-bold px-10 py-3 rounded-xl hover:bg-transparent duration-300 hover:text-primaryLight border-2 border-primaryLight">
+              <button className="bg-primaryLight text-primary font-bold px-10 py-3 rounded-md hover:bg-transparent duration-300 hover:text-primaryLight border-2 border-primaryLight">
                 লগ ইন / সাইন আপ
               </button>
             </Link>
@@ -220,7 +220,7 @@ const Navbar = () => {
         </Link>
         <div className="mb-10">{renderDrawerMenuItems(menuItems)}</div>
         <Link href={"/lets-talk"}>
-          <button className="bg-primaryLight text-primary font-bold px-10 py-2 rounded-xl hover:bg-transparent duration-300 hover:text-primaryLight border-2 border-primaryLight">
+          <button className="bg-primaryLight text-primary font-bold px-10 py-3 rounded-md hover:bg-transparent duration-300 hover:text-primaryLight border-2 border-primaryLight">
             লগ ইন / সাইন আপ
           </button>
         </Link>

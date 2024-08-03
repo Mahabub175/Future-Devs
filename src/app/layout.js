@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata = {
-  title: "Future Devs",
+  title: "Futures Devs",
   description:
     "Future Devs is online based learning platform, where students can learn their favorite topics and concepts.",
 };
