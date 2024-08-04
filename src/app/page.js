@@ -1,6 +1,7 @@
 import Banner from "@/components/AllSection/Home/Banner";
 import Counter from "@/components/AllSection/Home/Counter";
 import Courses from "@/components/AllSection/Home/Courses";
+import WhatYouGet from "@/components/AllSection/Home/WhatYouGet";
 import WhyUs from "@/components/AllSection/Home/WhyUs";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Courses />
       <WhyUs />
       <Counter />
+      <WhatYouGet />
     </main>
   );
 };
