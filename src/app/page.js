@@ -1,6 +1,7 @@
 import Banner from "@/components/AllSection/Home/Banner";
 import Counter from "@/components/AllSection/Home/Counter";
 import Courses from "@/components/AllSection/Home/Courses";
+import EnrollBanner from "@/components/AllSection/Home/EnrollBanner";
 import InstructorSide from "@/components/AllSection/Home/InstructorSide";
 import SimpleSide from "@/components/AllSection/Home/SimpleSide";
 import WhatYouGet from "@/components/AllSection/Home/WhatYouGet";
@@ -16,6 +17,7 @@ const Home = () => {
       <WhatYouGet />
       <SimpleSide />
       <InstructorSide />
+      <EnrollBanner />
     </main>
   );
 };

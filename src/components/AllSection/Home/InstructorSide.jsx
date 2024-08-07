@@ -1,7 +1,5 @@
 import banner from "@/assets/images/home/instructor.png";
 import Image from "next/image";
-import Link from "next/link";
-import { FaLongArrowAltRight } from "react-icons/fa";
 
 const InstructorSide = () => {
   return (
