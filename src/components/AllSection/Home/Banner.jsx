@@ -18,7 +18,7 @@ const Banner = () => {
       <div className="container mx-auto mt-10 lg:mt-20 flex flex-col lg:flex-row justify-between items-center px-4 gap-10">
         <div className="lg:w-4/6">
           <h1 className="text-3xl lg:text-5xl font-bold text-white flex flex-col gap-3 mb-8">
-            নিজেকে কাজে দক্ষ করুন, <spa>সুন্দর ক্যারিয়ার গড়ুন।</spa>
+            নিজেকে কাজে দক্ষ করুন, <span>সুন্দর ক্যারিয়ার গড়ুন।</span>
           </h1>
           <p className="text-textColor">
             অভিজ্ঞ মেন্টর ও আপডেটেড কারিকুলামে সাজানো আইটি ইন্সটিটিউটের অফলাইন,
