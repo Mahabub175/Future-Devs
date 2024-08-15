@@ -6,7 +6,7 @@ import { LuLayoutDashboard } from "react-icons/lu";
 
 const SingleCourseBanner = ({ course }) => {
   return (
-    <section className="bg-primaryLight/40 pt-32">
+    <section className="bg-primaryLight/40 py-32">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2">
