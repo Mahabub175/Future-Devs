@@ -5,11 +5,185 @@ import course4 from "@/assets/images/home/course4.png";
 import course5 from "@/assets/images/home/course5.png";
 import course6 from "@/assets/images/home/course6.png";
 
+import courseBanner1 from "@/assets/images/courseBanner.png";
+
+import pc from "@/assets/images/pc.png";
+import ram from "@/assets/images/ram.png";
+import time from "@/assets/images/time.png";
+
 export const courseData = [
   {
     id: 1,
     title: "ওয়েব ডেভেলপমেন্ট উইথ পাইথন জ্যাঙ্গো",
-    price: "৳১০০০০",
+    courseBanner: courseBanner1,
+    description:
+      "আমরা আমাদের শিক্ষার্থীদের সুন্দর ক্যারিয়ার গড়ার লক্ষে আমরা আমাদের কোর্স মডিউল থেকে শুরু করে জব প্লেসমেন্ট পর্যন্ত অন্যরকমভাবে সাজিয়েছি। যেন তারা কোর্স শেষ করার সাথে সাথে ফ্রীলান্সিং এবং সুনামধন্য প্রতিষ্ঠানে জব করতে পারে।",
+    class: "২৫ টি লাইভ ক্লাস",
+    project: "১০ টি প্রজেক্ট",
+    price: "৳১০,০০০",
+    discount: "৳৯,০০০",
+    learnings: [
+      { id: 1, title: "প্রোগ্রামিং ল্যাংগুয়েজ হিসেবে শেখানো হবে পাইথন" },
+      { id: 2, title: "ফ্রন্টেন্ডের জন্য শেখানো হবে REACT" },
+      { id: 3, title: "পাইথন এর এডভান্স কনসেপ্ট" },
+      {
+        id: 4,
+        title:
+          "ব্যাকেন্ডের জন্য আমরা শিখবো DJANGO, DJANGO REST FRAMEWORK, FLASK",
+      },
+      { id: 5, title: "DJANGO রেস্ট ফ্রেমওয়ার্ক এর এডভান্স কনসেপ্ট" },
+      { id: 6, title: "AUTHENTICATION, PERMISSIONS, THROTTLING, FILTERING" },
+    ],
+    curriculums: [
+      {
+        id: 1,
+        title: "ব্যাসিক ফাউন্ডেশন (Installment 01)",
+        list: [
+          {
+            id: 1,
+            title: "ওয়েব ডেভেলপমেন্ট ও HTML এর সাথে পরিচিত",
+            items: [
+              { id: 1, title: "VS Code Setup for HTML" },
+              { id: 2, title: "Advance web page structure" },
+              { id: 3, title: "Web Application Meta" },
+              { id: 4, title: "Interactive Element Tags" },
+              { id: 5, title: "Meta tags for progressive web application" },
+            ],
+          },
+          {
+            id: 2,
+            title: "ওয়েব ডেভেলপমেন্ট ও HTML এর সাথে পরিচিত",
+            items: [
+              { id: 1, title: "VS Code Setup for HTML" },
+              { id: 2, title: "Advance web page structure" },
+              { id: 3, title: "Web Application Meta" },
+              { id: 4, title: "Interactive Element Tags" },
+              { id: 5, title: "Meta tags for progressive web application" },
+            ],
+          },
+          {
+            id: 3,
+            title: "ওয়েব ডেভেলপমেন্ট ও HTML এর সাথে পরিচিত",
+            items: [
+              { id: 1, title: "VS Code Setup for HTML" },
+              { id: 2, title: "Advance web page structure" },
+              { id: 3, title: "Web Application Meta" },
+              { id: 4, title: "Interactive Element Tags" },
+              { id: 5, title: "Meta tags for progressive web application" },
+            ],
+          },
+          {
+            id: 4,
+            title: "ওয়েব ডেভেলপমেন্ট ও HTML এর সাথে পরিচিত",
+            items: [
+              { id: 1, title: "VS Code Setup for HTML" },
+              { id: 2, title: "Advance web page structure" },
+              { id: 3, title: "Web Application Meta" },
+              { id: 4, title: "Interactive Element Tags" },
+              { id: 5, title: "Meta tags for progressive web application" },
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "ব্যাসিক ফাউন্ডেশন (Installment 02)",
+        list: [
+          {
+            id: 1,
+            title: "ওয়েব ডেভেলপমেন্ট ও HTML এর সাথে পরিচিত",
+            items: [
+              { id: 1, title: "VS Code Setup for HTML" },
+              { id: 2, title: "Advance web page structure" },
+              { id: 3, title: "Web Application Meta" },
+              { id: 4, title: "Interactive Element Tags" },
+              { id: 5, title: "Meta tags for progressive web application" },
+            ],
+          },
+          {
+            id: 2,
+            title: "ওয়েব ডেভেলপমেন্ট ও HTML এর সাথে পরিচিত",
+            items: [
+              { id: 1, title: "VS Code Setup for HTML" },
+              { id: 2, title: "Advance web page structure" },
+              { id: 3, title: "Web Application Meta" },
+              { id: 4, title: "Interactive Element Tags" },
+              { id: 5, title: "Meta tags for progressive web application" },
+            ],
+          },
+          {
+            id: 3,
+            title: "ওয়েব ডেভেলপমেন্ট ও HTML এর সাথে পরিচিত",
+            items: [
+              { id: 1, title: "VS Code Setup for HTML" },
+              { id: 2, title: "Advance web page structure" },
+              { id: 3, title: "Web Application Meta" },
+              { id: 4, title: "Interactive Element Tags" },
+              { id: 5, title: "Meta tags for progressive web application" },
+            ],
+          },
+          {
+            id: 4,
+            title: "ওয়েব ডেভেলপমেন্ট ও HTML এর সাথে পরিচিত",
+            items: [
+              { id: 1, title: "VS Code Setup for HTML" },
+              { id: 2, title: "Advance web page structure" },
+              { id: 3, title: "Web Application Meta" },
+              { id: 4, title: "Interactive Element Tags" },
+              { id: 5, title: "Meta tags for progressive web application" },
+            ],
+          },
+        ],
+      },
+    ],
+    courses_for: [
+      {
+        id: 1,
+        title:
+          "যারা একদম শূন্য থেকে ওয়েব ডেভেলপমেন্ট শিখে ক্যারিয়ার স্টার্ট করতে চান",
+      },
+      {
+        id: 2,
+        title: "ইউনিভার্সিটি কিংবা কলেজের শিক্ষার্থী যিনি ডেভেলপার হতে চান",
+      },
+      { id: 3, title: "যিনি ওয়েব ডেভেলপমেন্ট শেখার  বিগিনার স্টেজে আছেন" },
+      {
+        id: 4,
+        title: "যারা প্রজেক্ট করে ওয়েব ডেভেলপমেন্ট শিখতে চাচ্ছেন ",
+      },
+      { id: 5, title: "DJANGO রেস্ট ফ্রেমওয়ার্ক এর এডভান্স কনসেপ্ট" },
+      { id: 6, title: "AUTHENTICATION, PERMISSIONS, THROTTLING, FILTERING" },
+    ],
+    requirements: [
+      {
+        id: 1,
+        name: "নূন্যতম ৪ জিবি র‍্যাম",
+        image: ram,
+      },
+      {
+        id: 1,
+        name: "ডেস্কটপ বা ল্যাপ্টপ ও ভালো ইন্টারনেট কানেকশন",
+        image: pc,
+      },
+      {
+        id: 1,
+        name: "লেগে থাকার মানসিকতা",
+        image: time,
+      },
+    ],
+    faq: [
+      { id: 1, question: "কোর্স শুরু হবে কখন?", answer: "কোর্স শুরু হবে কখন?" },
+      {
+        id: 2,
+        question: "আমি কি ভিডিওগুলো ডাউনলোড করতে পারবো?",
+        answer: "কোর্স শুরু হবে কখন?",
+      },
+      {
+        id: 3,
+        question: "এসেসমেন্ট কিভাবে হবে?",
+        answer: "কোর্স শুরু হবে কখন?",
+      },
+    ],
     seat: "৩",
     lesson: "৪৬",
     level: "Beginner",

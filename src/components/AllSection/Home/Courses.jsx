@@ -51,7 +51,7 @@ const Courses = () => {
                   <div className="my-6 h-[1px] bg-primary/40"></div>
                   <h2 className="text-2xl font-extrabold">{item?.title}</h2>
                   <h3 className="text-xl mt-3 font-extrabold">{item?.price}</h3>
-                  <Link href={"/"}>
+                  <Link href={`/courses/${item?.id}`}>
                     <button className="flex items-center bg-primary text-primaryLight font-bold px-10 py-4 rounded-md hover:bg-primaryLight duration-300 hover:text-primary border-2 border-primary group mt-10 w-full justify-center">
                       ফ্রিতে শিখুন
                       <FaLongArrowAltRight className="ml-2 text-white group-hover:translate-x-2 duration-300 group-hover:text-primary text-xl" />
