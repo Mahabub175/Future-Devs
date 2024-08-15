@@ -51,12 +51,6 @@ const Navbar = () => {
             {item?.children?.map((subItem) => (
               <Menu.Item key={subItem?.key}>
                 <Link href={subItem?.href} className="flex items-center gap-4">
-                  {/* <Image
-                    src={subItem?.image}
-                    width={20}
-                    height={20}
-                    alt="submenu"
-                  /> */}
                   <span
                     className={`block font-bold hover:text-primaryLight duration-500 ${
                       pathname === subItem?.href ? "text-primaryLight" : ""
@@ -200,7 +194,7 @@ const Navbar = () => {
         <div className="desktopMenu hidden md:flex space-x-4 items-center">
           {renderMenuItems(menuItems)}
           <div className="px-10">
-            <Link href={"/lets-talk"}>
+            <Link href={"/"}>
               <button className="bg-primaryLight text-primary font-bold px-10 py-3 rounded-md hover:bg-transparent duration-300 hover:text-primaryLight border-2 border-primaryLight">
                 লগ ইন / সাইন আপ
               </button>
@@ -219,7 +213,7 @@ const Navbar = () => {
           <Image src={logo} alt="logo" width={100} height={100} />
         </Link>
         <div className="mb-10">{renderDrawerMenuItems(menuItems)}</div>
-        <Link href={"/lets-talk"}>
+        <Link href={"/"}>
           <button className="bg-primaryLight text-primary font-bold px-10 py-3 rounded-md hover:bg-transparent duration-300 hover:text-primaryLight border-2 border-primaryLight">
             লগ ইন / সাইন আপ
           </button>
