@@ -3,6 +3,7 @@ import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Navbar from "@/components/Shared/Navbar/Navbar";
 import { Toaster } from "sonner";
+import Footer from "@/components/Shared/Footer/Footer";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           />
           <Navbar />
           {children}
+          <Footer />
         </AntdRegistry>
       </body>
     </html>

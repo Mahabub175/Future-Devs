@@ -1,47 +1,77 @@
 import Image from "next/image";
 import logo from "@/assets/images/logo-white.png";
-import linkedin from "@/assets/images/linkedin.png";
-import facebook from "@/assets/images/facebook.png";
-import insta from "@/assets/images/insta.png";
-import youtube from "@/assets/images/youtube.png";
 import Link from "next/link";
 import { footerData } from "@/assets/data/footerData";
+import { FaXTwitter, FaLinkedinIn, FaFacebookF } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import React from "react";
 
-const Footer = () => {
+const Footer = async () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-primary py-10 relative mt-44">
-      <div className="container mx-auto px-4 flex justify-center items-center">
-        <div
-          style={{ background: "linear-gradient(to right, #fef8f8, #f3eefe)" }}
-          className="px-10 lg:px-20 py-10 rounded-b-xl text-center absolute -top-20"
-        >
-          <p className="text-white font-bold mt-4 lg:text-2xl bg-primary px-10 lg:px-20 py-5 rounded-full">
-            Unlock Your Potential with Our Professional Services
-          </p>
-        </div>
-      </div>
-      <div className="container mx-auto px-4 1 mt-20">
-        <Link href={"/"}>
-          <Image
-            src={logo}
-            alt="logo"
-            width={250}
-            height={200}
-            className="-translate-x-6 lg:-translate-x-10"
-          />
-        </Link>
-        <div className="grid lg:grid-cols-4 items-start mt-10">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 col-span-3">
+    <footer className="py-10 relative bg-footer">
+      <div className="container mx-auto px-4 flex justify-center items-center"></div>
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-6 items-start mt-10">
+          <div className="col-span-2">
+            <Link href={"/"}>
+              <Image src={logo} alt="logo" width={150} height={200} />
+            </Link>
+            <p className="mt-4 text-white text-sm lg:w-[80%]">
+              আইটি ইন্সটিটিউট বাংলাদেশের একটি অন্যতম সনামধন্য আইটি ট্রেনিং
+              ইনস্টিটিউট। যেখানে আমরা বিভিন্ন বিষয়ের উপর আইটি প্রশিক্ষণ দিয়ে
+              আসছি। তাদের ক্যারিয়ার গড়ার লক্ষে আমাদের অভিজ্ঞ মেন্টরগণ কাজ করে
+              আসছে। তাই আমাদের শিক্ষার্থীরা তাদের পছন্দের কোর্সটি করে
+              ফ্রীলান্সিং এবং বিভিন্ন দেশি-বিদেশি কোম্পানিগুলো জব করছেন।
+            </p>
+            <div className="mt-10 lg:mt-0">
+              <div className="flex items-center gap-6 mt-6 justify-start text-white">
+                <Link
+                  href={"https://www.linkedin.com/company/vitasoft-solution"}
+                  target="_blank"
+                >
+                  <FaLinkedinIn className="text-4xl hover:scale-110 duration-300" />
+                </Link>
+                <Link
+                  href={"https://www.facebook.com/vitasoft.solutions"}
+                  target="_blank"
+                >
+                  <FaFacebookF className="text-4xl hover:scale-110 duration-300  " />
+                </Link>
+                <Link
+                  href={"https://www.instagram.com/vitasoft_solutions/"}
+                  target="_blank"
+                >
+                  <FaInstagram className="text-4xl hover:scale-110 duration-300" />
+                </Link>
+                <Link href={"https://x.com/vitasoft_"}>
+                  <FaXTwitter className="text-4xl hover:scale-110 duration-300" />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 col-span-4 mt-10 lg:mt-0 lg:ml-10">
             {footerData?.map((item) => (
               <div key={item.id}>
-                <h3 className="text-2xl font-bold text-white ">{item.title}</h3>
+                <h3 className="text-2xl font-bold text-white">{item?.title}</h3>
                 <ul className="mt-4">
-                  {item.links.map((link) => (
+                  {item?.links.map((link) => (
                     <li key={link.to} className="mt-2">
                       <Link href={link.to}>
-                        <span className="text-white hover:underline text-sm">
-                          {link.name}
-                        </span>
+                        {link.icon ? (
+                          <div className="flex items-center gap-2">
+                            {React.createElement(link.icon, {
+                              className: "text-lg text-white",
+                            })}
+                            <span className="text-white hover:underline text-sm">
+                              {link.name}
+                            </span>
+                          </div>
+                        ) : (
+                          <span className="text-white hover:underline text-sm">
+                            {link.name}
+                          </span>
+                        )}
                       </Link>
                     </li>
                   ))}
@@ -49,73 +79,27 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <div className="mt-10 lg:mt-0">
-            <h3 className="text-2xl font-bold text-white">Contact Us !</h3>
-            <div className="grid grid-cols-4 mt-6 justify-start">
-              <Link href={""}>
-                <Image
-                  src={linkedin}
-                  alt="linkedin"
-                  width={40}
-                  height={40}
-                  className="hover:scale-110 duration-300"
-                />
-              </Link>
-              <Link href={""}>
-                <Image
-                  src={facebook}
-                  alt="facebook"
-                  width={40}
-                  height={40}
-                  className="hover:scale-110 duration-300 -ml-5"
-                />
-              </Link>
-              <Link href={""}>
-                <Image
-                  src={insta}
-                  alt="insta"
-                  width={40}
-                  height={40}
-                  className="hover:scale-110 duration-300 -ml-10"
-                />
-              </Link>
-              <Link href={""}>
-                <Image
-                  src={youtube}
-                  alt="youtube"
-                  width={40}
-                  height={40}
-                  className="hover:scale-110 duration-300 -ml-[4rem]"
-                />
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
-      <hr className="mt-20 mb-10" />
+      <div className="w-full h-[1px] bg-white mt-20 mb-10"></div>
       <div className="container mx-auto px-4 lg:flex justify-between items-center">
-        <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-4 lg:gap-10">
-          <Link href={""}>
+        <p className="text-white text-sm mb-10 lg:mb-0">
+          © {currentYear} All Rights Reserved by{" "}
+          <span className="font-bold">Futures Devs</span>
+        </p>
+        <div className="flex lg:items-center gap-10">
+          <Link href={"/pages/privacy-policy"}>
             <p className="text-white hover:underline text-sm">Privacy Policy</p>
           </Link>
-          <Link href={""}>
-            <p className="text-white hover:underline text-sm">Terms of Use</p>
-          </Link>
-          <Link href={""}>
+          <Link href={"/pages/terms-and-conditions"}>
             <p className="text-white hover:underline text-sm">
-              Sales and Refunds
+              Terms and Conditions
             </p>
           </Link>
-          <Link href={""}>
-            <p className="text-white hover:underline text-sm">Legal</p>
-          </Link>
-          <Link href={""}>
-            <p className="text-white hover:underline text-sm">Site Map</p>
+          <Link href={"/pages/terms-and-conditions"}>
+            <p className="text-white hover:underline text-sm">Support</p>
           </Link>
         </div>
-        <p className="text-white/70 text-sm mt-10 lg:mt-0">
-          © 2024 All Rights Reserved
-        </p>
       </div>
     </footer>
   );
