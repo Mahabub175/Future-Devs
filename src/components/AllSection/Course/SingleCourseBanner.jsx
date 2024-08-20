@@ -11,7 +11,7 @@ const SingleCourseBanner = ({ course }) => {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2">
             <h1 className="text-3xl lg:text-5xl font-bold">{course.title}</h1>
-            <p className="text-textColor mt-6">{course?.description}</p>
+            <p className="text-textColorDark mt-6">{course?.description}</p>
             <div className="flex items-center gap-4 mt-10">
               <button className="bg-primaryLight flex items-center gap-4 justify-center text-primary font-bold px-10 py-3 rounded-md hover:bg-transparent duration-300 hover:text-primary border-2 border-primary">
                 <CgMediaLive className="text-xl" />

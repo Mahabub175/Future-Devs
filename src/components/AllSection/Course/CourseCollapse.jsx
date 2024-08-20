@@ -23,7 +23,7 @@ const CourseCollapse = ({ data, style }) => {
             {listItem?.items?.map((subItem) => (
               <div
                 key={subItem?.id}
-                className="text-textColor text-base font-semibold"
+                className="text-textColorDark text-base font-semibold"
               >
                 {subItem?.title}
               </div>
@@ -44,7 +44,9 @@ const CourseCollapse = ({ data, style }) => {
         ),
         children: (
           <div className="mb-4 pl-4">
-            <div className="text-textColor text-base">{faqItem?.answer}</div>
+            <div className="text-textColorDark text-base">
+              {faqItem?.answer}
+            </div>
           </div>
         ),
         style: {
