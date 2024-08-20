@@ -194,7 +194,7 @@ const Navbar = () => {
         <div className="desktopMenu hidden md:flex space-x-4 items-center">
           {renderMenuItems(menuItems)}
           <div className="px-10">
-            <Link href={"/"}>
+            <Link href={"/sign-in"}>
               <button className="bg-primaryLight text-primary font-bold px-10 py-3 rounded-md hover:bg-transparent duration-300 hover:text-primaryLight border-2 border-primaryLight">
                 লগ ইন / সাইন আপ
               </button>
@@ -213,7 +213,7 @@ const Navbar = () => {
           <Image src={logo} alt="logo" width={100} height={100} />
         </Link>
         <div className="mb-10">{renderDrawerMenuItems(menuItems)}</div>
-        <Link href={"/"}>
+        <Link href={"/sign-in"}>
           <button className="bg-primaryLight text-primary font-bold px-10 py-3 rounded-md hover:bg-transparent duration-300 hover:text-primaryLight border-2 border-primaryLight">
             লগ ইন / সাইন আপ
           </button>
